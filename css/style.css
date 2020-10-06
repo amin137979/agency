@@ -1,0 +1,369 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+* {
+    box-sizing: border-box;
+}
+html { height: 101%; } /* always display scrollbars */
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+ 
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+ 
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+ 
+input { outline: none; }
+ 
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+ 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.clearfix:before, .container:after { 
+    content: ""; display: table; 
+}
+.clearfix:after { 
+    clear: both; 
+}
+/* IE 6/7 */
+.clearfix { 
+     zoom: 1; 
+}
+@font-face {
+  font-family: 'iransans';
+  src: url('../fonts/IRANSansWeb.woff') format('truetype');
+}
+.clear {
+clear: both;
+}
+body {
+direction: rtl;
+}
+#boxtop {
+  width: 100%;
+  height: 30px; 
+  background-color: #2980b9;
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+#date {
+  float: right;
+  font: normal 14px/30px iransans;
+  color: #ffffff;
+}
+#lang{
+  float: left;
+  margin-right: 57px;
+  background: #2ecc71;
+  margin-top: 5px;
+}
+#lang ul li {
+  float: left;
+  padding: 0 8px;
+}
+#lang ul li a {
+  font: normal 12px/20px iransans;
+  color: #ffffff;
+}
+#lang ul li:first-child {
+  border-right: 1px solid #1f7e47;
+}
+#lang ul li a:hover {
+  color: #2980b9;
+}
+#langp {
+  float: left;
+}
+#langp ul li {
+  float: right;
+  padding: 0 14px;
+  background-image: url("../images/bullet01.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+#langp ul li a {
+   font: normal 14px/30px iransans;
+  color: #ffffff;
+  display: block;
+}
+#langp ul li a:hover{
+  background: #112244;
+   color: #ffffff;
+}
+#langp ul li:first-child {
+  background: none;
+}
+#box2 {
+  width: 100%;
+  height: 135px;
+  background: rgb(220, 220, 220);
+  float: left;
+}
+#logo {
+  background-image: url("../images/logo.png");
+  width: 66px;
+  height: 66px;
+  float: right;
+  margin-top: 34.5px;
+}
+#logo a {
+  font: normal 1px tahoma;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-indent: -999em;
+}
+#subtitle{
+  background-image: url("../images/bg03.png");
+  width: 257px;
+  height: 69px;
+  float: right;
+  margin-top: 27px;
+  margin-right: 20px;
+}
+#searching{
+ float: left;
+ margin-top: 52.5px;
+}
+#searching input[type="text"] {
+  width: 200px;
+  height: 30px;
+  background: #ffffff;
+  border: none;
+  padding: 0 12px;
+  font-family: iransans;
+  float: right;
+  transition: 1s;
+  
+}
+#searching input:focus {
+  width: 250px
+}
+#searching input[type="submit"] {
+  width: 30px;
+  height: 30px;
+  background: #ffffff url("../images/bg02.png") no-repeat center;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+#earth {
+  width: 100%;
+  height: 135px;
+  background: url("../images/bg01.png")  no-repeat center;
+}
+#navgation {
+  width: 100%;
+  height: 50px;
+  background: #f1f1f1;
+  float: right;
+}
+#navgation ul li {
+  display: inline-block;  
+  margin-left: 20px;
+  position:relative;
+ 
+}
+#navgation ul li a {
+  font-family: iransans;
+  font-size: 16px;
+  line-height: 50px;
+  color: #005c92;
+  display: block;
+  padding: 1px 6px;
+}
+#navgation ul li a:hover{
+   background: #2980b9;
+   color: #ffffff;
+}
+#navgation ul li ul {
+  display: none;
+  width: 120px;
+  height: 0;
+  background: rgba(0, 0, 0, 0.75);
+  position:absolute;
+  left: -78px;
+  top: 50px;
+  transition: all ease 0.5s;
+  z-index: 2;
+
+}
+#navgation ul li:hover ul {
+  display: block;
+  height: auto;
+}
+#navgation ul li ul li {
+  float: none; 
+  margin: 0;
+  display: block;
+  border-bottom: 1px solid #ffffff;
+}
+#navgation ul li ul li a {
+  color: #ffffff;
+  font-family: iransans;
+  text-align: center;
+  display: block;
+}
+#navgation ul li ul li a:hover {
+  background: #2980b9;
+}
+#warpper {
+  width: 100%;
+  padding:12px;
+}
+#content {
+  width: 878px;
+  height: 450px;
+  float: right;
+  margin-left: 16px;
+}
+#saidbar {
+  width: 267px;
+  height: 470px;
+  float: right; 
+}
+#topnews {
+  width: 100%;
+  margin-bottom: 16px;
+  position: relative;
+  display: none;
+}
+#topnews img {
+  width: 100%;
+  height: auto;
+}
+#topnews h2 {
+  width: 100%;
+  padding: 16px;
+  background: rgba(0,0,0,0.75);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#topnews a{
+  font: normal 20px/20px iransans;
+  color:  #ffffff;
+}
+#lastnews {
+  width: 531px;
+  float: right;
+  margin-left: 16px;
+  display: block;
+  overflow: hidden;
+
+}
+#lastnews h2 {
+  font:normal 17px/26px iransans;
+  color: #2980b9;
+}
+#lastnews h2:hover {
+  color: #ff4757;
+}
+.title {
+  width: 100%;
+  background: #c2c1bf;
+  border-right: 5px solid #2980b9;
+  padding: 0 16px;
+  font: normal 12px/25px iransans;
+  margin-bottom: 8px;
+}
+.article {
+  width: 100%; 
+  padding: 8px 0;
+  border-bottom: 1px solid rgb(220,220,220);
+  overflow: hidden;
+}
+.article img {
+  width: 150px;
+  height: 100px;
+  padding: 2px;
+  margin-left: 16px;
+  float: right;
+  border: 1px solid #c0c0c0;
+}
+.article h2 {
+  margin-bottom: 10px;
+ 
+}
+.article p {
+
+
+}
+.article p a {
+  font: normal 12px/25px iransans;
+}
+#othernews {
+  float: right;
+  width: 326px; 
+  margin-bottom: 12px;
+}
+#giif img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#listnews ul li {
+  background: url("../images/bilbilk.png") no-repeat right 12px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+#listnews ul li a {
+  font: normal 16px/28px iransans;
+  color: #005c92;
+}
+#advertisiing {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+}
+#hotnews  {
+  
+}
+#hotnews ul li {
+   background: #f8f8f8;
+   padding-right: 10px;
+   padding-bottom: 17px;
+   position:relative;
+}
+#hotnews ul li a {
+  font: normal 16px/25px iransans;
+  color: #005c92;
+}
+#hotnews ul li span {
+  background: url(../images/tata.png) no-repeat;
+  width: 6px;
+  height: 24px;
+  position:absolute;
+  top: 7px;
+  right: 1px;  
+}
+#hotnews ul li:nth-child(2n+2){
+  background-color: #e1f3ff;
+}
+.bibak {
+ float: left;
+ margin-left: 32px;
+ margin-right: 5px;
+ position:fixed;
+ right: 0;
+ bottom:0;
+ float: left;
+ display:none;
+  
+ 	
+
+}
+
